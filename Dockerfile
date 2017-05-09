@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -q update                     \
     && apt-get -y install bash-completion \
                           bzip2           \
-                          gnupg1          \
+                          gnupg          \
                           gpgv            \
                           graphviz        \
                           wget            \
