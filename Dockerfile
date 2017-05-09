@@ -18,6 +18,7 @@ RUN apt-get -q update                     \
     && apt-get -y install aptly
 
 COPY aptly.conf /etc/aptly.conf
+COPY entrypoint.sh /entrypoint.sh
 
 # Enable Aptly Bash completions
 RUN wget https://raw.githubusercontent.com/smira/aptly/master/bash_completion.d/aptly \
@@ -32,4 +33,5 @@ fi" >> /etc/bash.bashrc
 
 VOLUME ["/var/lib/aptly"]
 
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["bash"]
