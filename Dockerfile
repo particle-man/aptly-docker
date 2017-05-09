@@ -1,4 +1,4 @@
-FROM debian:precise
+FROM debian:trusty
 
 ENV DEBIAN_FRONTEND noninteractive
 
