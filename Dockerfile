@@ -14,7 +14,7 @@ RUN apt-get -q update                     \
                           xz-utils        \
                           gosu            \
                           ubuntu-archive-keyring \
-    && echo "deb http://repo.aptly.info/ precise main" > /etc/apt/sources.list.d/aptly.list \
+    && echo "deb http://repo.aptly.info/ trusty main" > /etc/apt/sources.list.d/aptly.list \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9E3E53F19C7DE460 \
     && apt-get -y install aptly
 
