@@ -1,4 +1,6 @@
 FROM ubuntu:18.04
+LABEL maintainer="David Pippenger <ppippeng@cisco.com"
+LABEL description="Container for the awesome apltly tool"
 
 ENV DEBIAN_FRONTEND noninteractive
 
