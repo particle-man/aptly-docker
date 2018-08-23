@@ -15,4 +15,6 @@ COPY aptly.conf /etc/aptly.conf
 
 VOLUME ["/var/lib/aptly"]
 
+ENTRYPOINT ["/entrypoint.sh"]
+
 CMD ["bash"]
