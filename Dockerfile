@@ -12,6 +12,7 @@ RUN apt-get -q update			\
 &&  apt-get -y clean
 
 COPY aptly.conf /etc/aptly.conf
+COPY entrypoint.sh /entrypoint.sh
 
 VOLUME ["/var/lib/aptly"]
 
