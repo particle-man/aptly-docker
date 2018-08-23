@@ -13,6 +13,7 @@ RUN apt-get -q update			\
 
 COPY aptly.conf /etc/aptly.conf
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
 
 VOLUME ["/var/lib/aptly"]
 
